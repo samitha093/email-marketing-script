@@ -1,0 +1,193 @@
+// color variants
+@import 'themes-vars.module.scss';
+
+// third-party
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+
+// ==============================|| LIGHT BOX ||============================== //
+.fullscreen .react-images__blanket {
+    z-index: 1200;
+}
+
+.MuiButtonBase-root.MuiFab-root.MuiFab-circular.MuiFab-sizeMedium.MuiFab-secondary.css-1lmiugb-MuiButtonBase-root-MuiFab-root{
+    display: none;
+}
+.outlined-basic-bpn{
+    display: flex;
+    width: 100%;
+}
+.outlined-basic-bpx{
+    width: 50%;
+    margin: 10px;
+}
+#outlined-basic{
+    width: 100%;
+}
+.save-server{
+    float: right;
+}
+.top-div{
+    margin-top: 50px;
+}
+.server-head{
+    font-weight: bold;
+}
+.server-card{
+    display: flex;
+    -webkit-box-shadow: -1px 0px 7px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow:    -1px 0px 7px 0px rgba(50, 50, 50, 0.62);
+    box-shadow:         -1px 0px 7px 0px rgba(50, 50, 50, 0.62);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.server-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+   padding: 20px;
+}
+.server-card-left75{
+    width: 75%;
+}
+.order-card_header-right25{
+    display: flex;
+    width: 25%;
+    float: right;
+}
+.outlined-basic-bpn33{
+    margin-top: 95px;
+}
+.server-card-left50{
+    width:50%;
+}
+.order-card_header25{
+    width:25%;
+    font-size: 30px;
+    padding-top: 18px;
+    display: flex;
+}
+.order-card_header25_green{
+    color: #00CC00;
+}
+// ==============================|| APEXCHART ||============================== //
+
+.apexcharts-legend-series .apexcharts-legend-marker {
+    margin-right: 8px;
+}
+
+// ==============================|| PERFECT SCROLLBAR ||============================== //
+
+.scrollbar-container {
+    .ps__rail-y {
+        &:hover > .ps__thumb-y,
+        &:focus > .ps__thumb-y,
+        &.ps--clicking .ps__thumb-y {
+            background-color: $grey500;
+            width: 5px;
+        }
+    }
+    .ps__thumb-y {
+        background-color: $grey500;
+        border-radius: 6px;
+        width: 5px;
+        right: 0;
+    }
+}
+
+.scrollbar-container.ps,
+.scrollbar-container > .ps {
+    &.ps--active-y > .ps__rail-y {
+        width: 5px;
+        background-color: transparent !important;
+        z-index: 999;
+        &:hover,
+        &.ps--clicking {
+            width: 5px;
+            background-color: transparent;
+        }
+    }
+    &.ps--scrolling-y > .ps__rail-y,
+    &.ps--scrolling-x > .ps__rail-x {
+        opacity: 0.4;
+        background-color: transparent;
+    }
+}
+
+// ==============================|| ANIMATION KEYFRAMES ||============================== //
+
+@keyframes wings {
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    53%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translateZ(0);
+    }
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -5px, 0);
+    }
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -7px, 0);
+    }
+    80% {
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translateZ(0);
+    }
+    90% {
+        transform: translate3d(0, -2px, 0);
+    }
+}
+
+@keyframes slideY {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes slideX {
+    0%,
+    50%,
+    100% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
